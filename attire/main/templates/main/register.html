@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- register.html -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/styles/register.css' %}">
+    <form method="POST" action="{% url 'register' %}">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% csrf_token %}
+        <input type="text" name="first_name" required placeholder="Имя">
+        <input type="text" name="last_name" required placeholder="Фамилия">
+        <input type="text" name="username" required placeholder="Username">
+        <input type="email" name="email" required placeholder="Email">
+        <input type="password" name="password" required placeholder="Пароль">
+        <input type="password" name="password2" required placeholder="Повторите пароль">
+        <input type="submit" value="Зарегистрироваться">
+        <button type="button" onclick="location.href='{% url 'login' %}'">Вход</button>
+        <button type="button" onclick="location.href='{% url 'home' %}'">Отмена</button>
+    </form>
+
+</body>
+</html>

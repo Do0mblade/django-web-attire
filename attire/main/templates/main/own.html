@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block style %}{% endblock %}
+  <link rel="stylesheet" href="{% static 'main/styles/footer.css' %}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+
+      <div class="subscribe-form">
+        <h2>Подписаться на рассылку</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Подписаться">
+        </form>
+      </div>
+
+        <h1>ВАША КОМАНДА:</h1>
+        <h2>ATTIRE <br> A-LA-CARTE</h2>
+        
+        <div class="footer_cont">
+          <p>Telegram:</p>
+          <ul>
+            <li><a href="https://t.me/do0mblade">@do0mblade</a></li>
+            <li><a href="https://t.me/neliva">@neliva</a></li>
+            <li><a href="https://t.me/not_your_Laurore">@not_your_Laurore</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer_nav">
+          <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="https://ru.files.me/u/yzjd8g2qpc" target="_blank">Скачать приложение</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'profile' %}">Профиль</a></li>
+            {% else %}
+            <li><a href="{% url 'register' %}">Регистрация</a></li>
+            {% endif %}
+
+          </ul>
+        </div>
+    
+    </div>
+    
+</body>
+</html>

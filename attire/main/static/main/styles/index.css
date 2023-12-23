@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+img {
+  pointer-events: none;
+}
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/dominik-kielbasa-ssncznayhc4-unsplash-1-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: black;
+  z-index: 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header_title {
+  position: relative;
+  z-index: 2;
+}
+
+.menu h2 a,
+.menu ul li a,
+.header_title h1,
+.header_title p {
+  color: rgb(0, 0, 0); /* Установите цвет текста в соответствии с вашим дизайном */
+}
+
+.menu h2 {
+  margin-left: 3%;
+  padding-top: 1%;
+  font-size: 30px;
+}
+
+.menu h2 a {
+  text-decoration: none;
+  color: white;
+  font-family: Mate;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#download {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 15%;
+  margin-top: 1%;
+}
+
+#download h3 {
+  display: inline-block;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  font-family: Microsoft JhengHei UI;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(0, 0, 0, 0.41) 100%);
+  margin: 0;
+}
+
+#download {
+  text-decoration: none;
+  color: black;
+}
+
+.header_title {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header_title h1 {
+  font-size: 14em; /* Регулируйте размер шрифта по вашему усмотрению */
+  margin: 0; /* Убираем внешние отступы, чтобы избежать нежелательного отступа вокруг заголовка */
+  text-align: center;
+  font-family: Mongolian Baiti;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header_title p {
+  font-size: 2.5em; /* Регулируйте размер шрифта по вашему усмотрению */
+  margin: 0 auto; /* Убираем внешние отступы, чтобы избежать нежелательного отступа вокруг абзаца */
+  width: 50%;
+}
+
+.about {
+  background-color: #262626;
+  color: white;
+}
+
+.about_me {
+  text-align: center;
+  background: #262626;
+}
+
+.about_me h1 {
+  padding: 5% 0 5% 0;
+  font-family: Times New Roman;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about_me p {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Times New Roman;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.SecondSection {
+  width: 100%; 
+  height: 1075px; 
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 200em;
+}
+
+.Line1 {
+  width: 1153px; 
+  height: 425.51px; 
+  left: 214px; 
+  top: 210.49px; 
+  position: absolute; 
+  border: 2px #FFFCFC solid;
+}
+
+#img1 {
+  width: 748px; 
+  height: 406px; 
+  left: 200px; 
+  top: 124px; 
+  position: absolute; 
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+#img2 {
+  width: 586px; 
+  height: 578px; 
+  left: 800px; 
+  top: 297px; 
+  position: absolute; 
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.bg_image {
+  width: 100%;
+  object-fit: cover;
+  background-color: #262626;
+  padding-bottom: 10%;
+}
+
+.bg_image img {
+  width: 100%;
+}
+
+.project {
+  background-color: #262626;
+  width: 100%; 
+  height: 2027px; 
+  position: relative;
+}
+
+.project h2 {
+  text-align: center;
+  color: white; 
+  font-size: 85px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+}
+
+#pr_text1 {
+  width: 847px; 
+  height: 112px; 
+  left: 675px; 
+  top: 335px; 
+  position: absolute; 
+  color: white; 
+  font-size: 30px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+}
+
+#pr_text2 {
+  width: 789px; 
+  height: 140px; 
+  left: 342px; 
+  top: 772px; 
+  position: absolute; 
+  text-align: right; 
+  color: white; 
+  font-size: 30px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+}
+
+#pr_text3 {
+  width: 880px; 
+  height: 139px; 
+  left: 665px; 
+  top: 1179px; 
+  position: absolute; 
+  color: white; 
+  font-size: 30px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+}
+
+.project img {
+  object-fit: cover;
+}
+
+#pr_img1 {
+  width: 583px; 
+  height: 321px; 
+  left: 73px; 
+  top: 236px; 
+  position: absolute; 
+  border-radius: 5px;
+}
+
+#pr_img2 {
+  width: 583px; 
+  height: 321px; 
+  left: 1153px; 
+  top: 660px; 
+  position: absolute; 
+  border-radius: 5px;
+}
+
+#pr_img3 {
+  width: 583px; 
+  height: 321px; 
+  left: 73px; 
+  top: 1106px; 
+  position: absolute; 
+  border-radius: 5px;
+}
+
+.pr {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200em;
+}
+
+.pr-left {
+  margin: 5%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.pr-left img {
+  width: 583px; 
+  height: 321px;
+  border-radius: 5px;
+}
+
+.pr-left p {
+  color: white; 
+  font-size: 30px; 
+  font-family: Times New Roman; 
+  font-weight: 400;
+  padding-left: 1%;
+  max-width: 70em;
+}
+
+.pr-right {
+  margin: 5%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.pr-right img {
+  width: 583px; 
+  height: 321px;
+  border-radius: 5px;
+}
+
+.pr-right p {
+  color: white; 
+  font-size: 30px; 
+  font-family: Times New Roman; 
+  font-weight: 400;
+  padding-right: 1%;
+  order: -1;
+  max-width: 70em;
+}
+
+.offer {
+  width: 100%;
+  height: 25%;
+  top: 1537px;
+  position: relative;
+  background-color: #989898;
+  top: 0;
+}
+
+.offer h2 { 
+  text-align: center; 
+  color: white; 
+  font-size: 70px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.offer_container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.offer_image-container {
+  margin: 1%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.offer_image-container img {
+  width: 13em;
+  height: auto;
+  display: block;
+}
+
+.offer_image-container p {
+  max-width: 8em;
+  font-size: 25px; 
+  font-family: Times New Roman; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  word-wrap: break-word;
+  padding-top: 0.7em;
+  text-align: center;
+}
+
+.gard {
+  color: white;
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+  background-color: #262626;
+}
+
+.gard h1 {
+  font-family: Times New Roman;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gard hr {
+  height: 1px;
+  background-color: white;
+}
+
+.gard p {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Times New Roman;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gard p span {
+  color: #BD8F8F;
+}
+
+.gard img {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.gard_imgs {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.gard_imgs img {
+  max-width: 25%;
+  height: auto;
+}

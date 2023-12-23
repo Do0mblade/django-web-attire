@@ -1,0 +1,109 @@
+.footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer h1 {
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .footer h2 {
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .footer_cont p {
+    padding-top: 3%;
+    font-family: Times New Roman;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .footer_cont ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.5s;
+  }
+  
+  .footer_cont ul li a:hover {
+    color: rgb(139, 139, 139);
+  }
+  
+  .footer_nav {
+    margin-top: 3%;
+  }
+  
+  .footer_nav ul {
+    margin: 0;
+    padding: 4px;
+  }
+  
+  .footer_nav ul li {
+    display: inline;
+    margin-right: 5px;
+  }
+  
+  .footer_nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.5s;
+  }
+  
+  .footer_nav ul li a:hover {
+    color: rgb(139, 139, 139);
+  }
+
+.subscribe-form {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.subscribe-form h2 {
+    color: white;
+    font-family: Times New Roman;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.5s;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.subscribe-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

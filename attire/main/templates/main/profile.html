@@ -1,0 +1,20 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/styles/profile.css' %}">
+    <title>Профиль пользователя</title>
+</head>
+<body>
+    <div class="profile-info">
+        <h2>Профиль пользователя</h2>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Имя:</strong> {{ user.first_name }}</p>
+        <p><strong>Фамилия:</strong> {{ user.last_name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <a href="{% url 'logout' %}" class="button">Выход</a>
+        <a href="{% url 'home' %}" class="button">Главная страница</a>
+    </div>
+</body>
+</html>
